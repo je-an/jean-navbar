@@ -1,0 +1,55 @@
+@size: 32px;
+@font-family: "Calibri";
+@font-color: white;
+@hover-color-font: gray;
+@hover-color-background: rgba(252, 252, 252, 0.26);
+@background-color: rgba(202, 196, 196, 0.8);
+.jean-navbar {
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: @background-color;
+    padding: 5px 50px 5px 50px;
+    #navbar-icon {
+        float: left;
+        img {
+            width: @size;
+            height: @size;
+        }
+    }
+    .navbar-element {
+        height: 100%;
+        color: @font-color;
+        font-family: @font-family;
+    }
+    #navbar-title {
+        margin-left: 35px;
+        float: left;
+        font-size: 2em;
+        font-weight: bold;
+        cursor: auto;
+    }
+    .navbar-section {
+        float: right;
+        cursor: pointer;
+        padding: 0 5px 0 5px;
+        font-weight: bold;
+        span {
+            text-align: center;
+        }
+        &:hover {
+            color: @hover-color-font;
+            background: @hover-color-background;
+        }
+    }
+    .border-left {
+        border-left: 1px solid @hover-color-background;
+    }
+    .border-right {
+        border-right: 1px solid @hover-color-background;
+    }
+    .active {
+        color: @hover-color-font;
+        background: @hover-color-background;
+    }
+}

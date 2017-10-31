@@ -1,0 +1,49 @@
+.jean-navbar {
+  position: fixed;
+  right: 0;
+  left: 0;
+  background: rgba(202, 196, 196, 0.8);
+  padding: 5px 50px 5px 50px;
+}
+.jean-navbar #navbar-icon {
+  float: left;
+}
+.jean-navbar #navbar-icon img {
+  width: 32px;
+  height: 32px;
+}
+.jean-navbar .navbar-element {
+  height: 100%;
+  color: white;
+  font-family: "Calibri";
+}
+.jean-navbar #navbar-title {
+  margin-left: 35px;
+  float: left;
+  font-size: 2em;
+  font-weight: bold;
+  cursor: auto;
+}
+.jean-navbar .navbar-section {
+  float: right;
+  cursor: pointer;
+  padding: 0 5px 0 5px;
+  font-weight: bold;
+}
+.jean-navbar .navbar-section span {
+  text-align: center;
+}
+.jean-navbar .navbar-section:hover {
+  color: gray;
+  background: rgba(252, 252, 252, 0.26);
+}
+.jean-navbar .border-left {
+  border-left: 1px solid rgba(252, 252, 252, 0.26);
+}
+.jean-navbar .border-right {
+  border-right: 1px solid rgba(252, 252, 252, 0.26);
+}
+.jean-navbar .active {
+  color: gray;
+  background: rgba(252, 252, 252, 0.26);
+}
