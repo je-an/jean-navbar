@@ -67,10 +67,15 @@ define(["jquery", "TypeCheck", "Inheritance", "Control", "css!navbar-css"], func
      * @param {Object} event - event object
      */
     Navbar.prototype._onSectionClick = function (event) {
-        var element = $(event.currentTarget), id = (element.attr("id")).replace("id-", "");
-        $("html, body").animate({
-            scrollTop: $("#" + id).offset().top
-        }, 250);
+        var element = $(event.currentTarget), id = (element.attr("id")).replace("id-", ""),
+            topValue;
+        if ($("#" + id).length !== 0) {
+            topValue = $("#" + id).offset().top;
+            $("html, body").animate({
+                scrollTop: topValue
+            }, 250);
+        }
+        
         this._options.onSectionClick(id);
     };
     /**
