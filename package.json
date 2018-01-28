@@ -1,6 +1,6 @@
 {
   "name": "jean-navbar",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Provides a navbar for a single page website",
   "main": "dist/jean-navbar.js",
   "scripts": {
