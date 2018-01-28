@@ -2,6 +2,10 @@
 
 Provides a navbar for a single page website. 
 
+## Preview
+
+- Visit an [implemented example](https://je-an.github.io/jean-navbar/example/index.html)
+
 ## Support
 Supports AMD eco system. If there is no loader, Navbar is registered as a browser variable.
 
